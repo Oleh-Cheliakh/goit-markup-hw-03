@@ -43,7 +43,7 @@ img {
 }
 
 .container {
-	max-width: 1158px;
+	max-width: 1128px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -169,6 +169,7 @@ img {
 	letter-spacing: 0.04em;
 	cursor: pointer;
 	line-height: 1.5;
+	border-radius: 4px;
 }
 
 .button-primary {
@@ -176,6 +177,7 @@ img {
 	color: var(--white);
 	border: none;
 	padding: 16px 32px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .button-secondary {
@@ -189,6 +191,9 @@ img {
 .button-secondary:focus {
 	background-color: var(--ocean);
 	color: var(--white);
+	border-color: var(--ocean);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08),
+		0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .button-primary:hover,
@@ -237,7 +242,7 @@ img {
 }
 
 .features-container .list-item {
-	flex-basis: calc((1158px - 3 * 24px) / 4);
+	flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 /* Services Section */
@@ -253,17 +258,17 @@ img {
 }
 
 .services-container .list-item {
-	flex-basis: calc((1158px - 2 * 24px) / 3);
+	flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 /* Team Section */
+.team-section {
+	background-color: var(--cloud);
+}
+
 .team-container {
 	padding-top: 120px;
 	padding-bottom: 120px;
-}
-
-.team-section {
-	background-color: var(--cloud);
 }
 
 .team-container .list {
@@ -275,7 +280,10 @@ img {
 .team-container .list-item {
 	text-align: center;
 	background-color: var(--white);
-	flex-basis: calc((1158px - 3 * 24px) / 4);
+	flex-basis: calc((100% - 3 * 24px) / 4);
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+		0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-container .list-item-title {
@@ -285,11 +293,6 @@ img {
 .team-container .list-item-text {
 	margin-top: 8px;
 	margin-bottom: 32px;
-}
-
-.team-container .list-item-image {
-	width: 100%;
-	object-fit: cover;
 }
 
 /* Footer */
@@ -321,7 +324,7 @@ img {
 
 /* Projects Section */
 
-.projects-section {
+.projects-container {
 	padding-top: 96px;
 	padding-bottom: 120px;
 }
@@ -341,7 +344,7 @@ img {
 }
 
 .projects-list .list-item {
-	flex-basis: calc((1158px - 2 * 24px) / 3);
+	flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 .projects-list .list-item-content {
